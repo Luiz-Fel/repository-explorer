@@ -20,7 +20,7 @@ export function RepositoryList() {
         })
         .then(response => response.json())
         .then(data => setRepositories(data))
-    });
+    }, []);
 
 
     return (
